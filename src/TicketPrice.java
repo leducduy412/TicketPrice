@@ -1,31 +1,33 @@
 public class TicketPrice {
-    public static int ticketPrice(boolean children, boolean u22, boolean adult, int day,
-                                  boolean normSeat, boolean vipSeat, boolean coupleSeat) {
-        int price = 0;
-
-        if (normSeat) price += 0;
-        else if (vipSeat) price += 10000;
-        else price += 20000;
-
-        switch (day) {
+    public static int ticketPrice(boolean children, boolean u22, boolean adult,
+                                  int day, boolean normSeat, boolean vipSeat, boolean coupleSeat) {
+        int price = 0;                                          //1
+        if (normSeat) {                                         //2
+            price += 0;                                         //3
+        } else if (vipSeat) {                                   //4
+            price += 10000;                                     //5
+        } else price += 20000;                                  //6
+        switch (day) {                                          //7
             case 3, 4, 5 -> {
-                if (children || u22) price += 55000;
-                else price += 70000;
+                if (children || u22) {                          //8
+                    price += 55000;                             //9
+                } else price += 70000;                          //10
             }
             case 6, 7, 8 -> {
-                if (children) price += 65000;
-                else if (u22) price += 70000;
-                else price += 85000;
+                if (children) {                                 //11
+                    price += 65000;                             //12
+                } else if (u22) {                               //13
+                    price += 70000;                             //14
+                } else price += 85000;                          //15
             }
             case 2 -> {
-                price += 50000;
+                price += 50000;                                 //16
             }
             default -> {
-                System.out.println("Invalid day!");
-                return 0;
+                System.out.println("Invalid day!");             //17
+                price = 0;                                      //17
             }
         }
-
-        return price;
+        return price;                                           //18
     }
 }

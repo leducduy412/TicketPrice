@@ -1,6 +1,7 @@
 import org.junit.Test;
 import org.junit.Assert;
 
+//Kiểm thử theo bảng quyết định
 public class TicketPriceTestDT {
     @Test
     public void Test_01 () {
