@@ -12,3 +12,6 @@ Class TicketPrice cung cấp hàm ticketPrice nhận đầu vào là loại vé 
 Class TicketPriceTestEP cung cấp bộ 27 test case sử dụng phương pháp phân vùng tương đương.
 
 Class TicketPriceTestDT cung cấp bộ 33 test case sử dụng phương pháp bảng quyết định.
+
+### Phần 2 : Kiểm thử dòng điều khiển
+Class TicketPriceTestCF cung cấp bộ 7 test case sử dụng phương pháp kiểm thử dòng quyết định với độ phủ C2.
