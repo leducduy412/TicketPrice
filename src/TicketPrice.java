@@ -1,6 +1,6 @@
 public class TicketPrice {
     public static int ticketPrice(boolean children, boolean u22, boolean adult,
-                                  int day, boolean normSeat, boolean vipSeat, boolean coupleSeat) {
+                                  int day, boolean normSeat, boolean vipSeat, boolean coupleSeat) { //0
         int price = 0;                                          //1
         if (normSeat) {                                         //2
             price += 0;                                         //3
