@@ -15,3 +15,6 @@ Class TicketPriceTestDT cung cấp bộ 33 test case sử dụng phương pháp 
 
 ### Phần 2 : Kiểm thử dòng điều khiển
 Class TicketPriceTestCF cung cấp bộ 7 test case sử dụng phương pháp kiểm thử dòng quyết định với độ phủ C2.
+
+### Phần 3 : Kiểm thử luồng dữ liệu
+Class TicketPriceTestDF cung cấp bộ 19 test case sử dụng phương pháp kiểm thử luồng dữ liệu với độ phủ all-c-uses/some-p-uses
